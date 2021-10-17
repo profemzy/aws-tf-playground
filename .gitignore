@@ -3,6 +3,7 @@
 terraform.tfstate.backup
 terraform.tfvars
 .idea
+terraform-dev.tfvars
 terraform-prod.tfvars
 terraform-staging.tfvars
 terraform.tfstate

@@ -8,16 +8,6 @@ variable "environment" {
   description = "Resource Environment"
 }
 
-variable "aws-access-key" {
-  description = "AWS Access Key"
-  type = string
-}
-
-variable "aws-secret-key" {
-  description = "AWS-Secret-Key"
-  type = string
-}
-
 variable "availability-zone" {
   default = "eu-west-3a"
   type = string
