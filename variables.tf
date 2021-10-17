@@ -1,25 +1,31 @@
 variable "region" {
-  default = "eu-west-3"
+  type = string
+  default = "Resource Region"
+}
+
+variable "environment" {
+  type = string
+  description = "Resource Environment"
 }
 
 variable "aws-access-key" {
+  description = "AWS Access Key"
+  type = string
 }
 
 variable "aws-secret-key" {
+  description = "AWS-Secret-Key"
+  type = string
 }
 
-variable "dev-vpc-cidr" {
-  default = "10.0.0.0/16"
+variable "availability-zone" {
+  default = "eu-west-3a"
+  type = string
 }
 
-variable "dev-vpc-subnet-cidr" {
-  default = "10.0.10.0/24"
-}
-
-variable "some-vpc-cidr" {
-  default = "172.31.0.0/16"
-}
-
-variable "some-vpc-subnet-cidr" {
-  default = "172.31.20.0/24"
+variable "vpc-cidr-blocks" {
+  type = list(object({
+    cidr_block = string,
+    name = string
+  }))
 }

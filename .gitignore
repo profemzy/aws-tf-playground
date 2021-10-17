@@ -1,6 +1,7 @@
 .terraform.lock.hcl
 .terraform
 terraform.tfstate.backup
-.terraform
 terraform.tfvars
 .idea
+terraform-prod.tfvars
+terraform-staging.tfvars
