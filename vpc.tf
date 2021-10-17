@@ -4,6 +4,7 @@ resource "aws_vpc" "eu-west3-dev-vpc" {
   tags = {
     Name:   "${var.region}-${var.environment}-vpc"
     Environment: var.environment
+    Description: var.vpc-cidr-blocks[0].description
   }
 }
 
@@ -15,5 +16,6 @@ resource "aws_subnet" "eu-west3-dev-vpc-subnet-1" {
   tags = {
     Name:  "${var.region}-${var.environment}-vpc-subnet-1"
     Environment: var.environment
+    Description: var.vpc-cidr-blocks[1].description
   }
 }

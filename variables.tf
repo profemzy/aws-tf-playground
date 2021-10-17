@@ -26,6 +26,6 @@ variable "availability-zone" {
 variable "vpc-cidr-blocks" {
   type = list(object({
     cidr_block = string,
-    name = string
+    description = string
   }))
 }
