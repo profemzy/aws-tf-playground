@@ -5,3 +5,4 @@ terraform.tfvars
 .idea
 terraform-prod.tfvars
 terraform-staging.tfvars
+terraform.tfstate
